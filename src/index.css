@@ -61,6 +61,11 @@ nav{
   color: #fff;
 
 }
+.loading{
+  text-align: center;
+  margin-top: 10px;
+  color: #d1cece;
+} 
 
 .blogtitle{
   margin: 30px auto;
