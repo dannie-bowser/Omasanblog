@@ -4,13 +4,14 @@ import logo from '../assets/logo.png'
 const Navbar = () => {
   return (
     <>
-      <nav>
+       <nav>
         <div className='logoArea'><img className="logo" src={logo} /><h2>OMA Blogs</h2></div>
         <div>
-          <a className='navlink'>Home</a>
-          <a className='navlink'>Add Blog</a>
+          <a href="/" className='navlink'>Home</a>
+          <a href="/AddBlog" className='navlink'>Add Blog</a>
         </div>
-      </nav>
+      </nav> 
+      
     </>
   )
 }

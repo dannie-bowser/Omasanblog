@@ -10,7 +10,7 @@ body{
   font-family: "Hubot Sans", sans-serif;
 }
 
-.logo{
+ .logo{
     height: 60px;
     width: auto;
     border-radius: 50%;
@@ -39,23 +39,19 @@ nav{
   list-style: none;
 }
 
- @media screen and (max-width: 480px){
-   nav{
-    font-size: 12px;
-    background-color: red;
-   }
- }
 
- .navlink {
+ nav a {
   display: inline-block;
   cursor: pointer;
   margin-left: 5px;
   padding: 4px;
   border-radius: 4px;
   box-sizing: border-box;
+  text-decoration: none;
+  color: black;
 }
 
-  .navlink:hover {
+  nav a:hover {
   background-color: #e2cdf7;
   font-weight: 500;
   cursor: pointer;
