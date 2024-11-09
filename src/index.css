@@ -89,3 +89,12 @@ nav{
   font-weight: 500;
   margin-top: 5px;
 }
+.blog-preview button{
+  margin: 5px;
+  background-color: #f87fdc;
+  padding: 4px;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 5px;
+}
