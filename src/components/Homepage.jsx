@@ -28,6 +28,7 @@ const Homepage = () => {
         
         );
 
+        
         const handleDelete = (id) => {
 
           const newBlogs = blogs.filter(blog => blog.id != id);
@@ -35,6 +36,11 @@ const Homepage = () => {
           setBLogs(newBlogs);
 
         }
+
+        useEffect(() => {
+
+          console.log('use effect ran');
+        }, [])
 
 
   return (
