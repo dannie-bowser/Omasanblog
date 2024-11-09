@@ -1,14 +1,16 @@
 import React from 'react'
-import './index.css'
+import logo from '../assets/logo.png'
 
 const Navbar = () => {
   return (
     <>
-      <ul className='navbar'>
-        <li>OMABLOGS</li>
-        <li>Home</li>
-        <li>Add Blog</li>
-      </ul>
+      <nav>
+        <div className='logoArea'><img className="logo" src={logo} /><h2>OMA Blogs</h2></div>
+        <div>
+          <a className='navlink'>Home</a>
+          <a className='navlink'>Add Blog</a>
+        </div>
+      </nav>
     </>
   )
 }
