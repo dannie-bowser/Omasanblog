@@ -28,13 +28,18 @@ const Homepage = () => {
         
         );
 
-        const handleDelete = () => {
-           
+        const handleDelete = (id) => {
+
+          const newBlogs = blogs.filter(blog => blog.id != id);
+
+          setBLogs(newBlogs);
+
         }
+
 
   return (
     <>
-     <Bloglistings blogs={blogs} title="Latest Feeds:"/>
+     <Bloglistings blogs={blogs} title="Latest Feeds:" handleDelete={handleDelete}/>
     </>
   )
 }
