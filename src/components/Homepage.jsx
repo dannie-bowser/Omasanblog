@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
+import Bloglistings from './Bloglistings';
 
 const Homepage = () => {
 
@@ -28,20 +29,12 @@ const Homepage = () => {
         );
 
         const handleDelete = () => {
-            setBLogs('man')
+           
         }
 
   return (
     <>
-      <h3 className='blogtitle'>Latest Feeds:</h3>
-      {blogs.map(blog =>(
-        <div className='blog-preview' key={ blog.id }>
-            <h3> { blog.title }</h3>
-            <p>{ blog.body }</p>
-            <h5>written by: { blog.author }</h5>
-            <button onClick={() => handleDelete(blog.id)}>delete</button>
-        </div>
-      ))}
+     <Bloglistings blogs={blogs} title="Latest Feeds:"/>
     </>
   )
 }
