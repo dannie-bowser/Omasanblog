@@ -1,11 +1,14 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import Bloglistings from './Bloglistings';
+import useFetch from '../UseFetch';
 
 const Homepage = () => {
 
-    const [blogs, setBLogs] = useState(null);
-    const [loading, setLoading] = useState(true);
+    const { data: blogs, loading, error } = useFetch('http://localhost:8000/blogs');
+
+
+
         
         const handleDelete = (id) => {
 
@@ -15,28 +18,13 @@ const Homepage = () => {
 
         }
 
-        useEffect(() => {
-
-          setTimeout(() => {
-            fetch('http://localhost:8000/blogs')
-            .then(res => {
-
-              return res.json()
-            }
-            )
-            .then(data => {
-              setBLogs(data);
-              setLoading(false);
-            })
-          }, 800)
-          
-        }, [])
-
+       
 
   return (
     <>
+       {error && <div className='loading'>{ error }</div>}
       {blogs && <Bloglistings blogs={blogs} title="Latest Feeds:" handleDelete={handleDelete} />} 
-      {loading && <p className='loading'>Loading...</p>}
+      {loading && <p className='loading'>Loading resources...</p>}
     </>
   )
 }
