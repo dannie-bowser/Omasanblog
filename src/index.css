@@ -107,3 +107,7 @@ nav{
   font-size: 15px;
   border-radius: 5px;
 }
+.content{
+  width: 70%;
+  margin:  40px auto auto;
+}

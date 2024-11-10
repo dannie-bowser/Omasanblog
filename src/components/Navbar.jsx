@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../assets/logo.png'
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -7,8 +8,8 @@ const Navbar = () => {
        <nav>
         <div className='logoArea'><img className="logo" src={logo} /><h2>omaBlogs</h2></div>
         <div>
-          <a href="/" className='navlink'>Home</a>
-          <a href="/AddBlog" className='navlink'>Add Blog</a>
+          <Link to="/" className='navlink'>Home</Link>
+          <Link to="/AddBlog" className='navlink'>Add Blog</Link>
         </div>
       </nav> 
       
