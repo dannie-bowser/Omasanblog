@@ -8,23 +8,20 @@ const Homepage = () => {
     const { data: blogs, loading, error } = useFetch('http://localhost:8000/blogs');
 
 
+        // const handleDelete = (id) => {
 
-        
-        const handleDelete = (id) => {
+        //   const newBlogs = blogs.filter(blog => blog.id != id);
 
-          const newBlogs = blogs.filter(blog => blog.id != id);
+        //   setBLogs(newBlogs);
 
-          setBLogs(newBlogs);
+        // }
 
-        }
-
-       
 
   return (
     <>
-       {error && <div className='loading'>{ error }</div>}
-      {blogs && <Bloglistings blogs={blogs} title="Latest Feeds:" handleDelete={handleDelete} />} 
-      {loading && <p className='loading'>Loading resources...</p>}
+          {error && <div className='loading'>{ error }</div>}
+          {blogs && <Bloglistings blogs={blogs} title="Latest Feeds:"  />} 
+          {loading && <p className='loading'>Loading resources...</p>}
     </>
   )
 }

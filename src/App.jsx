@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Homepage from './components/Homepage'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import AddBlog from './components/AddBlog';
+import BlogDetails from './components/BlogDetails';
 
 
 
@@ -18,6 +19,9 @@ function App() {
               </Route>
               <Route path="/AddBlog">
                 <AddBlog />
+              </Route>
+              <Route path="/blogs/:id">
+                <BlogDetails />
               </Route>
             </Switch>
           </Router>

@@ -107,7 +107,15 @@ nav{
   font-size: 15px;
   border-radius: 5px;
 }
+.blog-preview a{
+  text-decoration: none;
+  color: #000;
+  width: 100%;
+  height: auto;
+  background-color: red;
+}
 .content{
   width: 70%;
   margin:  40px auto auto;
 }
+
