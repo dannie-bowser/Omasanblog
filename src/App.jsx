@@ -1,16 +1,22 @@
 import { useState } from 'react'
 import Navbar from './components/Navbar'
 import Homepage from './components/Homepage'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  
   return (
     <>
-     <Navbar />
-     <Homepage />
+          <Router>
+            <Navbar />
+            <Switch>
+              <Route path="/">
+                <Homepage />
+              </Route>
+            </Switch>
+          </Router>
     </>
   )
 }
