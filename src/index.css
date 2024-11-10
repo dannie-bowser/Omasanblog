@@ -115,6 +115,17 @@ nav{
 }
 .content{
   width: 70%;
-  margin:  40px auto auto;
+  margin:  50px auto auto;
 }
 
+.blog-details h2{
+   color: #f87fdc;
+}
+.blog-details div{
+   color:#5e5e5e;
+   font-size: 18px;
+}
+.blog-details p{
+   font-weight: 500;
+   margin: 10px auto;
+}
