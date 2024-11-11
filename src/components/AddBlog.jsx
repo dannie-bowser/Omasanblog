@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useHistory } from 'react-router-dom';
 
 const AddBlog = () => {
 
@@ -6,6 +7,7 @@ const AddBlog = () => {
    const [body, setBody] = useState(null);
    const [author, setAuthor] = useState('Albert thorn');
    const [loading, setLoading] = useState(false)
+   const history = useHistory();
 
   const handleSubmit = (e) => {
      e.preventDefault();
@@ -21,6 +23,7 @@ const AddBlog = () => {
       })
       .then(() => {
         setLoading(false);
+        history.push('/');
       })
   }
 

@@ -2,6 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Bloglistings = ({ blogs, title }) => {
+
+
+
   return (
     <>
          <h3 className='blogtitle'>Latest Feeds:</h3>

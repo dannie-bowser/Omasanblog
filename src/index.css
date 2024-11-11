@@ -107,7 +107,7 @@ nav{
   font-size: 15px;
   border-radius: 5px;
 }
-.blog-preview a{
+ .blog-preview a{
   text-decoration: none;
   color: #000;
   width: 100%;
@@ -164,14 +164,19 @@ form textarea{
 form input, select{
   height: 40px;
 }
-form button{
+ button{
   border: none;
+  margin-top: 5px;
   background-color: #f87fdc;
   padding: 8px;
   color: #fff;
   font-size: 15px;
   border-radius: 8px;
 }
-form button:hover{
+ button:hover{
   background-color: #f05ccd;
+}
+.loading a{
+  color:#f05ccd;
+  text-decoration: none;
 }
